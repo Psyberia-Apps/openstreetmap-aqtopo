@@ -14,6 +14,7 @@ _parts:
     srs: *srs
   osm2pgsql: &osm2pgsql
     type: "postgis"
+    max_size: "100"
     dbname: "gis"
     key_field: ""
     geometry_field: "way"
@@ -32,7 +33,7 @@ center:
 format: png
 interactivity: false
 minzoom: 0
-maxzoom: 22
+maxzoom: 20
 srs: *srs
 
 Stylesheet:
